@@ -40,7 +40,6 @@ import { ContactUsComponent } from './ContactUs/contact-us/contact-us.component'
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { BlogsComponent } from './blogs/blogs.component';
 import { EmptyComponent } from './empty/empty.component';
-import { RoleComponent } from './User/role/role.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -97,7 +96,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatRadioModule,
     NgxCaptchaModule,
     BusinessModule,
-   // UserModule,
+    UserModule,
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: authInterceptor, multi: true},

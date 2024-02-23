@@ -12,7 +12,7 @@ import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
   { path: 'UserList', component: UserListComponent , canActivate: [AuthGuard]},
-  { path: '', component: RoleComponent , canActivate: [AuthGuard]},
+  { path: 'Role', component: RoleComponent , canActivate: [AuthGuard]},
   { path: 'IndividaulListFroms', component: IndividualFormsListComponent , canActivate: [AuthGuard]},
   { path: 'IndividaulListFroms/:Id', component: UserProfileComponent , canActivate: [AuthGuard]},
   { path: 'BusinessListForm', component: BusinessListFormComponent , canActivate: [AuthGuard]},

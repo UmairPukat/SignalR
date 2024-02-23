@@ -1,6 +1,17 @@
 <!-- <router-outlet></router-outlet> -->
 
 
- <!-- <button class="download-btn" (click)="startConnection()">Api Request</button> -->
+ <!-- <button class="download-btn" >Connect SignalR</button> -->
+ <!-- <button class="download-btn" (click)="LeaveGroup()">Leave Group</button> -->
 
- <button type="button" class="btn btn-primary" (click)="ConntectSignalR()">Primary</button>
+ <div *ngFor="let chatNotification of chatNotifications" class="chat-notification-container">
+    <div class="chat-notification">
+      <div class="label">Sender Name:</div>
+      <div class="sender-name">{{ chatNotification.senderName }}</div>
+      <div class="label">Message:</div>
+      <div class="message">{{ chatNotification.message }}</div>
+      <div class="label">Recipient Name:</div>
+      <div class="recipient-name">{{ chatNotification.receiverName }}</div>
+    </div>
+  </div>
+  

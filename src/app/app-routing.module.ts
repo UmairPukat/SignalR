@@ -33,7 +33,7 @@ const routes: Routes = [
           import('./business/business.module').then((m) => m.BusinessModule),
       },
       {
-        path: '',
+        path: 'User',
         // data: {permittedRoles: ['Admin']},
         loadChildren: () =>
           import('./User/user.module').then((m) => m.UserModule),
